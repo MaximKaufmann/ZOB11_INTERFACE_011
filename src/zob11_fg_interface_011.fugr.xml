@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <INCLUDES>
+    <SOBJ_NAME>LZOB11_FG_INTERFACE_011TOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZOB11_FG_INTERFACE_011</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>NEW_USER_011</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>Neuer Funktionsbaustein</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>ID</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>ZBAPI_OB11_AIRLINE_011-CARRID</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>RETURN</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>BAPIRET2</TYP>
+      </RSEXP>
+     </EXPORT>
+     <TABLES>
+      <RSTBL>
+       <PARAMETER>ITEMTAB</PARAMETER>
+       <DBSTRUCT>ZBAPI_OB11_AIRLINE_011</DBSTRUCT>
+      </RSTBL>
+     </TABLES>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>ID</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Struktur für BAPI Fluggesellschaft</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>RETURN</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Return Parameter</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ITEMTAB</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Struktur für BAPI Fluggesellschaft</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>ZBAPI_OB11_AIRLINE_011</FUNCNAME>
+     <SHORT_TEXT>BAPI - Flugesselschaft anzeigen</SHORT_TEXT>
+    </item>
+    <item>
+     <FUNCNAME>ZOB11_CREATE_AIRLINE_011</FUNCNAME>
+     <SHORT_TEXT>Fluggesellschaft anlegen</SHORT_TEXT>
+    </item>
+    <item>
+     <FUNCNAME>ZOB11_GET_AIRLINE_IDS_011</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>RFC - Vergebene Fluggesellschaften IDs</SHORT_TEXT>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>
